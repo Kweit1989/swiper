@@ -1,0 +1,89 @@
+@import url(./coverflow.css);
+@import url(./cube.css);
+@import url(./fade.css);
+@import url(./flip.css);
+
+html,
+body {
+  overflow-x: hidden;
+}
+body {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  /* height: 100vh; */
+  margin: 0;
+  background-color: #838383;
+  padding-bottom: 100px;
+  /* background: linear-gradient(
+    to right,
+    rgb(0, 255, 0, 0.5),
+    rgb(255, 0, 0, 0.5),
+    rgb(255, 255, 0, 0.5),
+    rgb(255, 127, 0, 0.5),
+    rgb(0, 0, 255, 0.5),
+    rgb(138, 43, 226, 0.5)
+  ); */
+}
+input[type="password"]:focus {
+  outline: none;
+}
+.header-pass,
+.photo-header {
+  font-family: "Amatic SC", serif;
+  font-weight: 700;
+  font-style: normal;
+  text-align: center;
+  color: bisque;
+  margin: 20px 0;
+}
+.photo-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+#passwordForm {
+  display: block;
+}
+#password {
+  font-family: "Amatic SC", serif;
+  font-weight: 700;
+  font-size: 18px;
+}
+#content {
+  display: none;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+}
+
+.btn-pass {
+  font-family: "Amatic SC", serif;
+  font-weight: 700;
+  font-size: 18px;
+}
+@media screen and (min-width: 450px) {
+  #password {
+    font-size: 20px;
+  }
+  .btn-pass {
+    font-size: 20px;
+  }
+}
+
+@media screen and (min-width: 700px) {
+  .header-pass,
+  .photo-header {
+    font-size: 40px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  #password {
+    font-size: 26px;
+  }
+  .btn-pass {
+    font-size: 26px;
+  }
+}

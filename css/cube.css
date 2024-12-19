@@ -1,0 +1,43 @@
+/* Swiper cube */
+.photo-wrapper-cube {
+  width: 100%;
+}
+.photo-wrapper-row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  width: 100%;
+  gap: 30px;
+}
+.swiper-photo-cube {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 300px;
+}
+.container-photo-cube {
+  width: auto;
+  height: 300px;
+}
+.container-photo-cube > img {
+  width: auto;
+  height: 100%;
+  object-fit: cover;
+}
+
+@media screen and (min-width: 450px) {
+  .swiper-photo-cube {
+    width: 400px;
+  }
+  .container-photo-cube {
+    height: 400px;
+  }
+}
+@media screen and (min-width: 1600px) {
+  .swiper-photo-cube {
+    width: 500px;
+  }
+  .container-photo-cube {
+    height: 500px;
+  }
+}

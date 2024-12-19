@@ -1,0 +1,50 @@
+/* Swiper coverflow */
+.swiper-photo-coverflow {
+  border: 2px solid bisque;
+  width: 300px;
+}
+.container-photo-coverflow {
+  height: 150px;
+}
+
+.container-photo-coverflow > img {
+  width: auto;
+  height: 100%;
+  object-fit: cover;
+}
+
+@media screen and (min-width: 450px) {
+  .swiper-photo-coverflow {
+    width: 400px;
+  }
+  .container-photo-coverflow {
+    height: 200px;
+  }
+}
+@media screen and (min-width: 700px) {
+  .photo-header {
+    font-size: 40px;
+  }
+  .swiper-photo-coverflow {
+    width: 600px;
+  }
+  .container-photo-coverflow {
+    height: 300px;
+  }
+}
+@media screen and (min-width: 1000px) {
+  .swiper-photo-coverflow {
+    width: 800px;
+  }
+  .container-photo-coverflow {
+    height: 400px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .swiper-photo-coverflow {
+    width: 1000px;
+  }
+  .container-photo-coverflow {
+    height: 500px;
+  }
+}

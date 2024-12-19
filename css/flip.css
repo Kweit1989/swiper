@@ -1,0 +1,52 @@
+/* Swiper flip */
+.swiper-photo-flip-pagination {
+  position: relative;
+}
+.photo-flip-pagination {
+  left: -10px !important; /* Отступ справа */
+  top: 0 !important; /* Выравнивание по верхнему краю */
+  width: 4px !important; /* Ширина полосы */
+  height: 100% !important; /* Высота полосы (высота контейнера слайдера) */
+}
+.photo-flip-pagination .swiper-pagination-progressbar-fill {
+  background: bisque !important; /* Цвет заливки */
+  width: 100% !important; /* Полная ширина для вертикального прогресса */
+  height: 100%; /* Начальная высота */
+}
+.swiper-photo-flip {
+  width: 300px;
+}
+.container-photo-flip {
+  height: 300px;
+}
+.container-photo-flip > img {
+  width: 100%;
+  height: 100%;
+}
+@media screen and (min-width: 450px) {
+  .swiper-photo-flip {
+    width: 400px;
+  }
+  .container-photo-flip {
+    height: 400px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .swiper-photo-flip {
+    width: 500px;
+  }
+  .container-photo-flip {
+    height: 500px;
+  }
+  .photo-flip-pagination {
+    left: -15px !important; /* Отступ справа */
+  }
+}
+@media screen and (min-width: 1500px) {
+  .swiper-photo-flip {
+    width: 700px;
+  }
+  .container-photo-flip {
+    height: 700px;
+  }
+}

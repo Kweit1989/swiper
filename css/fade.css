@@ -1,0 +1,171 @@
+/* Swiper fade */
+.swiper-photo-fade-navigation {
+  position: relative;
+}
+.navigation-style-next,
+.navigation-style-prev {
+  position: absolute;
+  z-index: 10;
+  top: 50%;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  border: 1px solid #838383;
+  background-color: bisque;
+}
+.navigation-style-next.swiper-button-disabled,
+.navigation-style-prev.swiper-button-disabled {
+  opacity: 0.5;
+  pointer-events: none;
+}
+
+.navigation-style-next {
+  right: 0;
+  transform: translate(50%, -50%);
+}
+.navigation-style-prev {
+  left: 0;
+  transform: translate(-50%, -50%);
+}
+.navigation-style-next::after,
+.navigation-style-prev::after {
+  content: "";
+  display: block;
+  position: absolute;
+  background: url(./../photo/arrow.svg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 8px;
+  height: 12px;
+}
+.navigation-style-next::after {
+  top: 50%;
+  right: 50%;
+  transform: translate(50%, -50%) rotate(180deg);
+}
+.navigation-style-prev::after {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.swiper-photo-fade-paggination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  row-gap: 10px;
+}
+.swiper-horizontal
+  > .swiper-pagination-bullets.swiper-pagination-bullets-dynamic,
+.swiper-pagination-horizontal.swiper-pagination-bullets.swiper-pagination-bullets-dynamic {
+  transform: translateY(0);
+}
+.swiper-pagination-bullet-active {
+  background-color: bisque;
+}
+.swiper-photo-fade {
+  overflow: hidden;
+  border-radius: 10px;
+  border: 2px solid bisque;
+  width: 300px;
+}
+.container-photo-fade {
+  height: auto;
+  border-radius: 10px;
+  overflow: hidden;
+}
+.container-photo-fade > img {
+  width: 100%;
+  height: 100%;
+  vertical-align: top;
+}
+@media screen and (min-width: 450px) {
+  .swiper-photo-fade {
+    width: 400px;
+  }
+  .navigation-style-next,
+  .navigation-style-prev {
+    width: 30px;
+    height: 30px;
+  }
+  .paggination-style > .swiper-pagination-bullet {
+    width: 10px;
+    height: 10px;
+  }
+}
+@media screen and (min-width: 700px) {
+  .swiper-photo-fade {
+    width: 600px;
+  }
+  .navigation-style-next,
+  .navigation-style-prev {
+    width: 35px;
+    height: 35px;
+  }
+  .navigation-style-next::after,
+  .navigation-style-prev::after {
+    width: 12px;
+    height: 16px;
+  }
+  .paggination-style > .swiper-pagination-bullet {
+    width: 12px;
+    height: 12px;
+  }
+}
+@media screen and (min-width: 1000px) {
+  .swiper-photo-fade {
+    width: 800px;
+  }
+  .navigation-style-next,
+  .navigation-style-prev {
+    width: 40px;
+    height: 40px;
+  }
+  .navigation-style-next::after,
+  .navigation-style-prev::after {
+    width: 14px;
+    height: 18px;
+  }
+  .paggination-style > .swiper-pagination-bullet {
+    width: 14px;
+    height: 14px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .swiper-photo-fade {
+    width: 1000px;
+  }
+  .navigation-style-next,
+  .navigation-style-prev {
+    width: 50px;
+    height: 50px;
+  }
+  .navigation-style-next::after,
+  .navigation-style-prev::after {
+    width: 16px;
+    height: 20px;
+  }
+  .paggination-style > .swiper-pagination-bullet {
+    width: 16px;
+    height: 16px;
+  }
+}
+@media screen and (min-width: 1500px) {
+  .swiper-photo-fade {
+    width: 1400px;
+  }
+  .navigation-style-next,
+  .navigation-style-prev {
+    width: 50px;
+    height: 50px;
+  }
+  .navigation-style-next::after,
+  .navigation-style-prev::after {
+    width: 16px;
+    height: 20px;
+  }
+  .paggination-style > .swiper-pagination-bullet {
+    width: 16px;
+    height: 16px;
+  }
+}

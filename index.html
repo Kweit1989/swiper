@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Lilita+One&family=Pacifico&family=Playwrite+IE+Guides&family=Satisfy&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/style.css" />
+    <title>Swiper</title>
+  </head>
+  <body>
+    <!-- login -->
+    <div id="passwordForm">
+      <h2 class="header-pass">Введите пароль:</h2>
+      <input type="password" id="password" placeholder="Пароль" />
+      <button class="btn-pass" onclick="checkPassword()">Войти</button>
+    </div>
+
+    <div id="content">
+      <!-- Swiper coverflow-->
+      <div class="photo-wrapper">
+        <h2 class="photo-header">Наше фото в карусели (coverflow)</h2>
+        <div class="swiper-photo-coverflow">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <div class="container-photo-coverflow">
+                <img src="./photo/coverflow/2.jpg" alt="Фотография" />
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="container-photo-coverflow">
+                <img src="./photo/coverflow/1.jpg" alt="Фотография" />
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="container-photo-coverflow">
+                <img src="./photo/coverflow/8.jpg" alt="Фотография" />
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="container-photo-coverflow">
+                <img src="./photo/coverflow/4.jpg" alt="Фотография" />
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="container-photo-coverflow">
+                <img src="./photo/coverflow/5.jpg" alt="Фотография" />
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="container-photo-coverflow">
+                <img src="./photo/coverflow/6.jpg" alt="Фотография" />
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="container-photo-coverflow">
+                <img src="./photo/coverflow/7.jpg" alt="Фотография" />
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="container-photo-coverflow">
+                <img src="./photo/coverflow/3.jpg" alt="Фотография" />
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="container-photo-coverflow">
+                <img src="./photo/coverflow/9.jpg" alt="Фотография" />
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="container-photo-coverflow">
+                <img src="./photo/coverflow/10.jpg" alt="Фотография" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Swiper Cube -->
+      <div class="photo-wrapper photo-wrapper-cube">
+        <h2 class="photo-header">Наше фото в кубе (cube)</h2>
+        <div class="photo-wrapper-row">
+          <div class="swiper-photo-cube" data-initial-slide="0">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div class="container-photo-cube">
+                  <img src="./photo/cube/1.jpg" alt="Фотография" />
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="container-photo-cube">
+                  <img src="./photo/cube/2.jpg" alt="Фотография" />
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="container-photo-cube">
+                  <img src="./photo/cube/3.jpg" alt="Фотография" />
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="container-photo-cube">
+                  <img src="./photo/cube/4.jpg" alt="Фотография" />
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="container-photo-cube">
+                  <img src="./photo/cube/5.jpg" alt="Фотография" />
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="container-photo-cube">
+                  <img src="./photo/cube/6.jpg" alt="Фотография" />
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="container-photo-cube">
+                  <img src="./photo/cube/7.jpg" alt="Фотография" />
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="container-photo-cube">
+                  <img src="./photo/cube/8.jpg" alt="Фотография" />
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="container-photo-cube">
+                  <img src="./photo/cube/9.jpg" alt="Фотография" />
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="container-photo-cube">
+                  <img src="./photo/cube/10.jpg" alt="Фотография" />
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-photo-cube" data-initial-slide="2">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div class="container-photo-cube swiper-zoom-container">
+                  <img src="./photo/cube/1.jpg" alt="Фотография" />
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="container-photo-cube swiper-zoom-container">
+                  <img src="./photo/cube/2.jpg" alt="Фотография" />
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="container-photo-cube swiper-zoom-container">
+                  <img src="./photo/cube/3.jpg" alt="Фотография" />
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="container-photo-cube swiper-zoom-container">
+                  <img src="./photo/cube/4.jpg" alt="Фотография" />
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="container-photo-cube swiper-zoom-container">
+                  <img src="./photo/cube/5.jpg" alt="Фотография" />
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="container-photo-cube swiper-zoom-container">
+                  <img src="./photo/cube/6.jpg" alt="Фотография" />
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="container-photo-cube swiper-zoom-container">
+                  <img src="./photo/cube/7.jpg" alt="Фотография" />
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="container-photo-cube swiper-zoom-container">
+                  <img src="./photo/cube/8.jpg" alt="Фотография" />
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="container-photo-cube swiper-zoom-container">
+                  <img src="./photo/cube/9.jpg" alt="Фотография" />
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="container-photo-cube swiper-zoom-container">
+                  <img src="./photo/cube/10.jpg" alt="Фотография" />
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-photo-cube" data-initial-slide="1">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div class="container-photo-cube">
+                  <img src="./photo/cube/1.jpg" alt="Фотография" />
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="container-photo-cube">
+                  <img src="./photo/cube/2.jpg" alt="Фотография" />
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="container-photo-cube">
+                  <img src="./photo/cube/3.jpg" alt="Фотография" />
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="container-photo-cube">
+                  <img src="./photo/cube/4.jpg" alt="Фотография" />
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="container-photo-cube">
+                  <img src="./photo/cube/5.jpg" alt="Фотография" />
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="container-photo-cube">
+                  <img src="./photo/cube/6.jpg" alt="Фотография" />
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="container-photo-cube">
+                  <img src="./photo/cube/7.jpg" alt="Фотография" />
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="container-photo-cube">
+                  <img src="./photo/cube/8.jpg" alt="Фотография" />
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="container-photo-cube">
+                  <img src="./photo/cube/9.jpg" alt="Фотография" />
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="container-photo-cube">
+                  <img src="./photo/cube/10.jpg" alt="Фотография" />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Swiper fade-->
+      <div class="photo-wrapper">
+        <h2 class="photo-header">
+          Наше фото в постепенном исчезновении (fade)
+        </h2>
+        <div class="swiper-photo-fade-paggination">
+          <div class="swiper-photo-fade-navigation">
+            <div class="swiper-photo-fade">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <div class="container-photo-fade">
+                    <img src="./photo/coverflow/9.jpg" alt="Фотография" />
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="container-photo-fade">
+                    <img src="./photo/coverflow/1.jpg" alt="Фотография" />
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="container-photo-fade">
+                    <img src="./photo/coverflow/3.jpg" alt="Фотография" />
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="container-photo-fade">
+                    <img src="./photo/coverflow/4.jpg" alt="Фотография" />
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="container-photo-fade">
+                    <img src="./photo/coverflow/5.jpg" alt="Фотография" />
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="container-photo-fade">
+                    <img src="./photo/coverflow/6.jpg" alt="Фотография" />
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="container-photo-fade">
+                    <img src="./photo/coverflow/7.jpg" alt="Фотография" />
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="container-photo-fade">
+                    <img src="./photo/coverflow/8.jpg" alt="Фотография" />
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="container-photo-fade">
+                    <img src="./photo/coverflow/2.jpg" alt="Фотография" />
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="container-photo-fade">
+                    <img src="./photo/coverflow/10.jpg" alt="Фотография" />
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="photo-fade-navigation-next navigation-style-next"></div>
+            <div class="photo-fade-navigation-prev navigation-style-prev"></div>
+          </div>
+          <div class="photo-fade-paggination paggination-style"></div>
+        </div>
+      </div>
+
+      <!-- Swiper flip-->
+      <div class="photo-wrapper">
+        <h2 class="photo-header">Наше фото в переворачивании (flip)</h2>
+        <div class="photo-wrapper-row">
+          <div class="swiper-photo-flip-pagination">
+            <div class="swiper-photo-flip" data-initial-slide="6">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <div class="container-photo-flip">
+                    <img src="./photo/cube/1.jpg" alt="Фотография" />
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="container-photo-flip">
+                    <img src="./photo/cube/2.jpg" alt="Фотография" />
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="container-photo-flip">
+                    <img src="./photo/cube/3.jpg" alt="Фотография" />
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="container-photo-flip">
+                    <img src="./photo/cube/4.jpg" alt="Фотография" />
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="container-photo-flip">
+                    <img src="./photo/cube/5.jpg" alt="Фотография" />
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="container-photo-flip">
+                    <img src="./photo/cube/6.jpg" alt="Фотография" />
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="container-photo-flip">
+                    <img src="./photo/cube/7.jpg" alt="Фотография" />
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="container-photo-flip">
+                    <img src="./photo/cube/8.jpg" alt="Фотография" />
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="container-photo-flip">
+                    <img src="./photo/cube/9.jpg" alt="Фотография" />
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="container-photo-flip">
+                    <img src="./photo/cube/10.jpg" alt="Фотография" />
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="photo-flip-pagination photo-flip-pagination-1"></div>
+          </div>
+
+          <div class="swiper-photo-flip-pagination">
+            <div class="swiper-photo-flip" data-initial-slide="3">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <div class="container-photo-flip">
+                    <img src="./photo/cube/1.jpg" alt="Фотография" />
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="container-photo-flip">
+                    <img src="./photo/cube/2.jpg" alt="Фотография" />
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="container-photo-flip">
+                    <img src="./photo/cube/3.jpg" alt="Фотография" />
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="container-photo-flip">
+                    <img src="./photo/cube/4.jpg" alt="Фотография" />
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="container-photo-flip">
+                    <img src="./photo/cube/5.jpg" alt="Фотография" />
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="container-photo-flip">
+                    <img src="./photo/cube/6.jpg" alt="Фотография" />
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="container-photo-flip">
+                    <img src="./photo/cube/7.jpg" alt="Фотография" />
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="container-photo-flip">
+                    <img src="./photo/cube/8.jpg" alt="Фотография" />
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="container-photo-flip">
+                    <img src="./photo/cube/9.jpg" alt="Фотография" />
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="container-photo-flip">
+                    <img src="./photo/cube/10.jpg" alt="Фотография" />
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="photo-flip-pagination photo-flip-pagination-2"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="./main.js"></script>
+  </body>
+</html>
